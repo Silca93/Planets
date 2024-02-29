@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    
+}
+
+.homePage {
+  background-image: url(./assets/img/galaxy-night-landscape.jpg);
+  background-size: cover;
+  background-position: -100px;
+}
