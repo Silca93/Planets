@@ -3,12 +3,57 @@
 @tailwind utilities;
 
 
-body {
+
+*{
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal; 
     
 }
 
 .homePage {
-  background-image: url(./assets/img/galaxy-night-landscape.jpg);
+  background-image: url(./assets/home/background-home-desktop.jpg);
   background-size: cover;
   background-position: -100px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 100; 
+  font-style: normal; 
+}
+
+.destinationPage {
+  background-image: url(./assets/destination/background-destination-desktop.jpg);
+  background-size: cover;
+}
+.techPage {
+  background-image: url(./assets//technology/background-technology-desktop.jpg);
+}
+
+.Destination {
+  background-image: url(./assets/destination/background-destination-desktop.jpg);
+}
+
+.crewPage {
+  background-image: url(./assets//crew/background-crew-desktop.jpg);
+}
+
+.LOGO {
+  background-image: url(./assets/shared/logo.svg);
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: 0px 20px;
+}
+
+.Rightnav {
+  backdrop-filter: blur(10px);
+  position: relative;
+}
+
+.Rightnav::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  width: 90px;
+  height: 5px;
+  background-color: rgb(190, 187, 187);
 }
