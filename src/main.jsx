@@ -43,6 +43,12 @@ const router = createBrowserRouter([
  {
     path: '/Technology',
     element: <Technology data={data}/>,
+    children: [
+      {
+         path: '/Technology/:idTech',
+         element: <Technology />
+      }
+    ]
  }
 ]);
 
