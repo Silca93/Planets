@@ -17,7 +17,7 @@ import data from './assets/data.json'
 
 const router = createBrowserRouter([
  {
-    path: '/',
+    path: '/Planets/',
     element: <Home data={data}/>,
  },
  {
