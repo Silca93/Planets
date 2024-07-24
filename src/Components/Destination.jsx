@@ -27,7 +27,7 @@ export default function Destination() {
             <div className="flex gap-5 text-white text-xl">
                         {Object.keys(data.destinations).map((element, key) => {
                     return (
-                        <Link key={key} to={`/Technology/${key}` }>
+                        <Link key={key} to={`/Destination/${key}` }>
                         <p className="text-white">{data.destinations[element].name}</p>
                         
                         </Link>
@@ -39,7 +39,7 @@ export default function Destination() {
                 
             </div>
             <h1 className="text-white text-[5rem]">{planetId.name.toUpperCase()}</h1>
-            <p className="text-white mb-8 text-[1.5rem]" >{planetId.description}</p>
+            <p className="text-white mb-8 text-[1.2rem]" >{planetId.description}</p>
             <div className="w-[50rem] h-[1px] bg-gray-300"></div>
 
             <div className="flex w-full justify-center items-center">

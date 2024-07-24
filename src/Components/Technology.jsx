@@ -23,10 +23,10 @@ const imagePath = new URL(`../assets/technology/${techId.images.portrait}`, impo
              {Object.keys(data.technology).map((element, key) => {
                     return (
                       <Link key={key} to={`/Technology/${key}` }>
-                          <div className="h-[5rem] w-[5rem] rounded-full bg-white flex justify-center items-center">
+                          <div className="h-[5rem] w-[5rem] rounded-full text-[2rem] text-white focus:bg-white focus:text-black border-2 border-white flex justify-center items-center" tabIndex="0">
                           {data.technology[element].key}
                           
-                          <p className="text-[2rem]">{key + 1}</p>
+                          {key + 1}
                             
                           </div>
                         </Link>
